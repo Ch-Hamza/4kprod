@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  nginx:
+    container_name: 4kprod-app
+    image: 4kprod
+    build: '.'
+    ports:
+      - "4200:80"
+
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
