@@ -16,4 +16,4 @@ LABEL version="1.0"
 COPY nginx.conf /etc/nginx/nginx.conf
 
 WORKDIR /usr/share/nginx/html
-COPY --from=build-satge /usr/src/app/dist/ .
+COPY --from=build-satge /usr/src/app/dist/prod .
