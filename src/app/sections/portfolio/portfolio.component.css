@@ -1,3 +1,46 @@
 .portfolio-desc {
   color: black;
 }
+
+.masonry-item .synopsis {
+  visibility:hidden;
+}
+
+.masonry-item:hover .synopsis {
+  visibility:visible;
+}
+
+.synopsis {
+  font-size: 0.9em;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 16;
+  -webkit-box-orient: vertical;
+}
+
+.synopsis-small {
+  font-size: 0.9em;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 16;
+  -webkit-box-orient: vertical;
+}
+
+.masonry-item .synopsis-small {
+  visibility:hidden;
+}
+
+.masonry-item:hover .synopsis-small {
+  visibility:visible;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .synopsis-small {
+    -webkit-line-clamp: 3 !important;
+    margin-bottom: 5px !important;
+  }
+}
